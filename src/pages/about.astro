@@ -2,38 +2,188 @@
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-	description: "I'm a starter theme for Astro.build",
-	title: "About",
+	description: "Learn more about me, my journey as a developer, and what drives my passion for creating amazing web experiences.",
+	title: "About Me",
 };
 ---
 
 <PageLayout meta={meta}>
+	<div class="max-w-4xl mx-auto">
+		<h1 class="title mb-8 text-center">About Me</h1>
+		
+		<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
+			<!-- Profile Image and Quick Info -->
+			<div class="lg:col-span-1">
+				<div class="text-center mb-8">
+					<img 
+						src="/avatar.jpg" 
+						alt="Your Name" 
+						class="w-48 h-48 rounded-2xl mx-auto mb-6 border-4 border-accent-one/20 shadow-lg"
+					/>
+					<h2 class="text-2xl font-semibold mb-2 bg-gradient-to-r from-accent-two to-accent-one bg-clip-text text-transparent">
+						Your Name
+					</h2>
+					<p class="text-accent mb-4">Full-Stack Developer</p>
+					<div class="flex flex-col space-y-2 text-sm">
+						<span class="flex items-center justify-center">
+							<svg class="w-4 h-4 mr-2 text-accent-one" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+							</svg>
+							San Francisco, CA
+						</span>
+						<span class="flex items-center justify-center">
+							<svg class="w-4 h-4 mr-2 text-accent-one" fill="currentColor" viewBox="0 0 20 20">
+								<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+								<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+							</svg>
+							your.email@domain.com
+						</span>
+					</div>
+				</div>
+			</div>
 
-	<h1 class="title mb-6">About</h1>
-	<div class="prose prose-citrus max-w-none">
-		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
-		</p>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc" role="list">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
-		<p>
-			Clone or fork my <a
-				aria-label="github repository"
-				class="citrus-link inline-block"
-				href="https://github.com/artemkutsan/astro-citrus"
-				rel="noreferrer"
-				target="_blank">repo</a
-			> if you like me!
-		</p>
+			<!-- Main Content -->
+			<div class="lg:col-span-2">
+				<div class="prose prose-citrus max-w-none">
+					<h2 class="text-accent-two mb-4">My Story</h2>
+					<p class="mb-6 leading-relaxed">
+						Hello! I'm a passionate full-stack developer with over 5 years of experience creating 
+						digital experiences that matter. My journey into programming started during college when 
+						I built my first website for a local business – seeing how technology could solve real 
+						problems sparked a passion that continues to drive me today.
+					</p>
+
+					<p class="mb-6 leading-relaxed">
+						I specialize in modern web technologies like React, Node.js, and TypeScript, but I'm 
+						always exploring new tools and frameworks. What excites me most is the intersection of 
+						great design and robust functionality – creating applications that are not only powerful 
+						but also delightful to use.
+					</p>
+
+					<h2 class="text-accent-two mb-4">What I Do</h2>
+					<p class="mb-6 leading-relaxed">
+						Currently, I work as a Senior Frontend Developer at TechCorp, where I lead a team of 
+						developers building scalable web applications. I'm also a freelance consultant, helping 
+						startups and small businesses bring their digital visions to life.
+					</p>
+
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+						<div class="bg-special-light p-6 rounded-lg border border-color-200">
+							<h3 class="text-accent font-semibold mb-3">Frontend Development</h3>
+							<p class="text-sm text-textColor leading-relaxed">
+								Building responsive, accessible, and performant user interfaces with modern 
+								frameworks and best practices.
+							</p>
+						</div>
+						<div class="bg-special-light p-6 rounded-lg border border-color-200">
+							<h3 class="text-accent font-semibold mb-3">Backend Development</h3>
+							<p class="text-sm text-textColor leading-relaxed">
+								Designing robust APIs and server architectures that scale with your business needs.
+							</p>
+						</div>
+						<div class="bg-special-light p-6 rounded-lg border border-color-200">
+							<h3 class="text-accent font-semibold mb-3">UI/UX Design</h3>
+							<p class="text-sm text-textColor leading-relaxed">
+								Creating intuitive user experiences through thoughtful design and user research.
+							</p>
+						</div>
+						<div class="bg-special-light p-6 rounded-lg border border-color-200">
+							<h3 class="text-accent font-semibold mb-3">Consulting</h3>
+							<p class="text-sm text-textColor leading-relaxed">
+								Helping teams adopt new technologies and improve their development processes.
+							</p>
+						</div>
+					</div>
+
+					<h2 class="text-accent-two mb-4">Beyond Code</h2>
+					<p class="mb-6 leading-relaxed">
+						When I'm not coding, you'll find me hiking in the mountains, experimenting with new 
+						recipes in the kitchen, or contributing to open-source projects. I'm also passionate 
+						about mentoring aspiring developers and regularly speak at local meetups and conferences.
+					</p>
+
+					<p class="mb-8 leading-relaxed">
+						I believe in continuous learning and staying curious. Whether it's exploring a new 
+						programming language, diving into machine learning, or understanding the latest design 
+						trends, I'm always looking for ways to grow and improve my craft.
+					</p>
+
+					<div class="bg-gradient-to-r from-accent-one/10 to-accent-two/10 p-6 rounded-lg border border-accent-one/20">
+						<h3 class="text-accent font-semibold mb-3">Let's Connect!</h3>
+						<p class="text-textColor mb-4 leading-relaxed">
+							I'm always interested in new opportunities and collaborations. Whether you want to 
+							discuss a project, share ideas, or just chat about technology, feel free to reach out!
+						</p>
+						<div class="flex space-x-4 flex-wrap gap-2">
+							<a href="/contact/" class="inline-flex items-center justify-center h-10 px-4 rounded-lg bg-gradient-to-r from-accent-one to-accent-two text-bgColor font-medium hover:brightness-110 transition-all">
+								Get In Touch
+							</a>
+							<a href="/resume.pdf" class="inline-flex items-center justify-center h-10 px-4 rounded-lg border-2 border-accent-one/30 hover:border-accent-one/50 text-accent font-medium transition-all">
+								Download Resume
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Timeline/Experience Section -->
+		<section class="mt-16">
+			<h2 class="title mb-8 text-center text-accent-two">Experience</h2>
+			<div class="max-w-3xl mx-auto">
+				<div class="relative">
+					<!-- Timeline line -->
+					<div class="absolute left-4 top-0 bottom-0 w-0.5 bg-accent-one/30"></div>
+					
+					<!-- Experience items -->
+					<div class="space-y-8">
+						<div class="relative flex items-start">
+							<div class="absolute left-2 w-4 h-4 bg-accent-one rounded-full border-4 border-bgColor"></div>
+							<div class="ml-12">
+								<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+									<h3 class="text-lg font-semibold text-accent">Senior Frontend Developer</h3>
+									<span class="text-sm text-textColor">2022 - Present</span>
+								</div>
+								<p class="text-accent-two font-medium mb-2">TechCorp Inc.</p>
+								<p class="text-textColor text-sm leading-relaxed">
+									Leading frontend development for flagship products, mentoring junior developers, 
+									and implementing modern React architectures that improved performance by 40%.
+								</p>
+							</div>
+						</div>
+
+						<div class="relative flex items-start">
+							<div class="absolute left-2 w-4 h-4 bg-accent-two rounded-full border-4 border-bgColor"></div>
+							<div class="ml-12">
+								<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+									<h3 class="text-lg font-semibold text-accent">Full-Stack Developer</h3>
+									<span class="text-sm text-textColor">2020 - 2022</span>
+								</div>
+								<p class="text-accent-two font-medium mb-2">StartupXYZ</p>
+								<p class="text-textColor text-sm leading-relaxed">
+									Built and maintained multiple web applications from ground up, working with 
+									React, Node.js, and PostgreSQL in a fast-paced startup environment.
+								</p>
+							</div>
+						</div>
+
+						<div class="relative flex items-start">
+							<div class="absolute left-2 w-4 h-4 bg-accent-one rounded-full border-4 border-bgColor"></div>
+							<div class="ml-12">
+								<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+									<h3 class="text-lg font-semibold text-accent">Junior Developer</h3>
+									<span class="text-sm text-textColor">2019 - 2020</span>
+								</div>
+								<p class="text-accent-two font-medium mb-2">WebAgency Pro</p>
+								<p class="text-textColor text-sm leading-relaxed">
+									Developed responsive websites and web applications for various clients, 
+									gaining experience in modern frontend frameworks and best practices.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
-
 </PageLayout>
